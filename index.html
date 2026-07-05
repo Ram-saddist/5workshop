@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            margin: 0px;
+        }
+        .navbar{
+            display: flex;
+           justify-content: space-between;
+           padding: 10px;
+           background-color: white;
+        }
+        .logo{
+            width: 20%;
+        }
+        .logo img{
+            width: 20%;
+            vertical-align: middle;
+        }
+        .logo span{
+            font-size: 1.3rem;
+        }
+        .nav-links a, .nav-buttons a{
+            text-decoration: none;
+            color: black;
+            font-size: 0.9rem;
+            margin:0px 10px;
+            font-weight: bold
+        }
+        .nav-buttons .sign{
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./images/logo.png" width="5%" alt=""/>
+            <span> <b>Learnify</b></span>
+        </div>
+        <div class="nav-links">
+            <a href="https://www.google.com">Home</a>
+            <a href="">About Us</a>
+            <a href="">Courses</a>
+            <a href="">Contact</a>
+        </div>
+        <div class="nav-buttons">
+            <a href="">Login</a>
+            <a class="sign" href="">Sign Up</a>
+        </div>
+    </nav>
+
+</body>
+</html>
