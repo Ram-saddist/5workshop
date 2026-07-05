@@ -42,7 +42,7 @@
             padding: 5%;
             background-image: url("images/hero-section.png");
             background-size: 100% 450px;
-            background-attachment: fixed;
+            background-attachment: scroll;
             background-repeat: no-repeat;
         }
         .learn{
@@ -66,6 +66,30 @@
         .hero-buttons button:hover{
             background-color: blue;
             color: white;
+        }
+        .courses-container{
+            padding: 2%;
+        }
+        .courses-container h2{
+            text-align: center;
+        }
+        .cards-parent{
+            display: flex;
+            gap: 20px;
+        }
+        .card{
+            border-radius: 8px;
+            box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.196)
+        }
+        .card img{
+            width: 100%;
+        }
+        .card-body{
+            padding: 10px;
+        }
+        .card-description, .rating{
+            font-size: 0.9rem;
+            color: rgba(0, 0, 0, 0.796);
         }
     </style>
 </head>
@@ -95,6 +119,45 @@
             <div class="hero-buttons">
                 <button>Browser Courses</button>
                 <button>How it works</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="courses-container">
+        <h2>Popular Courses</h2>
+        <div class="cards-parent">
+            <div class="card">
+                <img src="./images/web.png" alt=""/>
+                <div class="card-body">
+                    <h3 class="card-title">Web Development</h3>
+                <p class="card-description">Learn HTML, CSS, JavaScript and build websites</p>
+                <p class="rating">4.8⭐ 12k+ students</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/data science.png" alt=""/>
+                
+              <div class="card-body">
+                <h3 class="card-title">Data Science</h3>
+                  <p class="card-description">Explore data analysis, visualization and machine learning</p>
+                <p class="rating">4.7 ⭐ 8k+ students</p>
+              </div>
+            </div>
+            <div class="card">
+                <img src="./images/ui-ux.png" alt=""/>
+              <div class="card-body">
+                  <h3 class="card-title">UI/UX Design</h3>
+                <p class="card-description">Learn design principles and create stunning UI</p>
+                <p class="rating">4.6⭐6k+ students </p>
+              </div>
+            </div>
+            <div class="card">
+                <img src="./images/digital.png" alt=""/>
+               <div class="card-body">
+                 <h3 class="card-title">Digital Marketing</h3>
+                <p class="card-description">Learn SEO, social media and grow brand</p>
+                <p class="rating">4.9 ⭐ 10K+ students</p>
+               </div>
             </div>
         </div>
     </div>
